@@ -1,4 +1,7 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- prettier-ignore  -->
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %}
 
 <!-- Preloader -->
 <div id="preloader">
@@ -37,22 +40,29 @@
 <section class="best-receipe-area">
 	<div class="container">
 		<div class="row">
-			{% for chave, nome_da_receita in nome_das_receitas.items %}
+			<!-- prettier-ignore  -->
+			{% if receitas %} 
+			{% for receita in receitas %}
 			<!-- Single Best Receipe Area -->
 			<div class="col-12 col-sm-6 col-lg-4">
 				<div class="single-best-receipe-area mb-30">
 					<img src="{% static 'img/bg-img/foto_receita.png' %}" alt="" />
 					<div class="receipe-content">
 						<a href="{% url 'receita' %}">
-							<h5>{{ nome_da_receita }}</h5>
+							<h5>{{ receita.nome_receita }}</h5>
 						</a>
 					</div>
 				</div>
 			</div>
-			{% endfor %}
+			<!-- prettier-ignore  -->
+			{% endfor %} 
+			{% else %} 
+			{% endif %}
 		</div>
 	</div>
 </section>
 <!-- ##### Best Receipe Area End ##### -->
 
-{% include 'partials/footer.html' %} {% endblock %}
+<!-- prettier-ignore  -->
+{% include 'partials/footer.html' %} 
+{% endblock %}
