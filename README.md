@@ -37,6 +37,8 @@ git clone https://github.com/JardelDeveloper/alurareceita-web.git
 ```bash
 # Access the directory
 $ cd alurareceita-web
+# Check if the Python (3.8) is installed (if not, you will need to install)
+$ python --version
 # Create virtual env (venv)
 $ python -m venv ./venv
 # Activate venv
