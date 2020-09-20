@@ -43,6 +43,8 @@ $ python --version
 $ python -m venv ./venv
 # Activate venv
 $ C:\Users\user\folder\alurareceita-web\venv\Scripts\Activate.ps1
+# In case of doubt about venv access this link below - (Environment preparation)
+https://docs.python.org/pt-br/dev/library/venv.html
 # Install Django 2.2.6
 $ pip install Django==2.2.6
 # Create project with python-django called alurareceita
