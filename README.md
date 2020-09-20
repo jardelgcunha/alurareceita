@@ -12,10 +12,14 @@ This project was developed with the following technologies:
 
 - [Python](https://www.python.org/doc/)
 - [Django](https://docs.djangoproject.com/en/2.2/)
+- [HTML | W3C ](https://html.spec.whatwg.org/multipage/)
+- [CSS | MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [Javascript | MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [PostgreSQL](https://www.postgresql.org/docs/)
 
 Tools & Utilities included:
 
+- [Git](https://git-scm.com/doc)
 - [Prettier](https://prettier.io/docs/en/index.html)
 - [ESLint](https://eslint.org/docs/user-guide/getting-started)
 - [Expo Google Fonts](https://github.com/expo/google-fonts)
