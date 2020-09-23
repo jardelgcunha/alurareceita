@@ -1,0 +1,90 @@
+{% load static %}
+
+<!-- Header Area -->
+<header class="header-area">
+	<!-- Top Header Area -->
+	<div class="top-header-area">
+		<div class="container h-100">
+			<div class="row h-100 align-items-center justify-content-between">
+				<!-- Breaking News Area -->
+				<div class="col-12 col-sm-6">
+					<div class="breaking-news">
+						<div id="breakingNewsTicker" class="ticker">
+							<ul>
+								<li><a href="">Boas vindas!</a></li>
+								<li><a href="">As melhores receitas</a></li>
+								<li><a href="">Você encontra aqui!</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- ##### Breaking News Area End ##### -->
+
+				<!-- Top Social Info Area -->
+				<div class="col-12 col-sm-6">
+					<div class="top-social-info text-right">
+						<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<!-- ##### Top Social Info Area End ##### -->
+			</div>
+		</div>
+	</div>
+	<!-- ##### Top Header Area End ##### -->
+
+	<!-- Navbar Area -->
+	<div class="delicious-main-menu">
+		<div class="classy-nav-container breakpoint-off">
+			<div class="container">
+				<!-- Menu Nav Area -->
+				<nav class="classy-navbar justify-content-between" id="deliciousNav">
+					<!-- Logo Area -->
+					<a class="nav-brand" href="{% url 'index' %}"
+						><img src="{% static 'img/core-img/logo.png' %}" alt=""
+					/></a>
+					<!-- ##### Logo Area End ##### -->
+
+					<!-- Navbar Toggler Area -->
+					<div class="classy-navbar-toggler">
+						<!-- Menu Area -->
+						<span class="navbarToggler"
+							><span></span><span></span><span></span
+						></span>
+						<!-- ##### Menu Area End ##### -->
+					</div>
+					<!-- ##### Navbar Toggler Area End ##### -->
+
+					<!-- Menu Home Area-->
+					<div class="classy-menu">
+						<!-- close btn Area -->
+						<div class="classycloseIcon">
+							<div class="cross-wrap">
+								<span class="top"></span><span class="bottom"></span>
+							</div>
+						</div>
+						<!-- ##### close btn Area End ##### -->
+
+						<!-- Nav Home Area -->
+						<div class="classynav">
+							<ul>
+								<li><a href="{% url 'index' %}">Home</a></li>
+							</ul>
+
+							<!-- Search Form Area -->
+							<div class="search-btn">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+							<!-- ##### Search Form Area End ##### -->
+						</div>
+						<!-- ##### Nav Home End #####-->
+					</div>
+					<!-- ##### Menu Home Area End ##### -->
+				</nav>
+				<!-- ##### Menu Nav Area End ##### -->
+			</div>
+		</div>
+	</div>
+	<!-- ##### Navbar Area End ##### -->
+</header>
+<!-- ##### Header Area End ##### -->
