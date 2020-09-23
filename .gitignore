@@ -1,3 +1,15 @@
-/venv/
 shortcuts.txt
+
+*.log
+*.pot
+*.pyc
+
+/venv/
+
 __pycache__
+
+media
+
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
