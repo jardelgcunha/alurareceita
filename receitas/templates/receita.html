@@ -1,37 +1,21 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- prettier-ignore  -->
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %}
 
-<!-- Preloader -->
+<!-- Preloader Area -->
 <div id="preloader">
 	<i class="circle-preloader"></i>
 	<img src="{% static 'img/core-img/hamburger.png' %}" alt="" />
 </div>
+<!-- ##### Preloader Area End #####-->
 
-<!-- Search Wrapper -->
-<div class="search-wrapper">
-	<!-- Close Btn -->
-	<div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+<!-- prettier-ignore  -->
+{% include 'partials/_busca.html' %}
 
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<form action="{% url 'buscar' %}">
-					<input
-						type="text"
-						name="buscar"
-						placeholder="O que está procurando..."
-					/>
-					<button type="submit">
-						<i class="fa fa-search" aria-hidden="true"></i>
-					</button>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
+{% include 'partials/_menu.html' %}
 
-{% include 'partials/menu.html' %}
-
-<!-- Receipe Post Search -->
+<!-- Receipe Post Search Area -->
 <!-- <div class="receipe-post-search mb-80">
 	<div class="container">
 		<form action="#" method="post">
@@ -50,8 +34,9 @@
 		</form>
 	</div>
 </div> -->
+<!-- ##### Receipe Post Search Area End ##### -->
 
-<!-- Receipe Slider -->
+<!-- Receipe Slider Area -->
 <div class="container">
 	<div class="row">
 		<div class="col-12">
@@ -65,6 +50,7 @@
 		</div>
 	</div>
 </div>
+<!-- ##### Receipe Slider Area End ##### -->
 
 <!-- Receipe Content Area -->
 <div class="receipe-content-area">
@@ -82,7 +68,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- Ingredientes -->
+			<!-- Ingredients Area -->
 			<div class="col-12 col-lg-4">
 				<div class="ingredients my-5">
 					<h4>Ingredientes</h4>
@@ -91,18 +77,23 @@
 					</div>
 				</div>
 			</div>
-			<!-- Ingredientes -->
+			<!-- ##### Ingredients Area End ##### -->
 
+			<!-- Single Preparation Step -->
 			<div class="row">
 				<div class="col-12 col-lg-8">
-					<!-- Single Preparation Step -->
 					<div class="single-preparation-step d-flex">
 						<p>{{ receita.modo_preparo }}</p>
 					</div>
 				</div>
 			</div>
+			<!-- ##### Single Preparation Step End #####-->
 		</div>
 	</div>
 </div>
+<!-- ##### Receipe Content Area End ##### -->
 
-{% include 'partials/footer.html' %} {% endblock %}
+<!-- prettier-ignore  -->
+{% include 'partials/_footer.html' %} 
+
+{% endblock %}
