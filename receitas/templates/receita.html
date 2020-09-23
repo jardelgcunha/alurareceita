@@ -14,10 +14,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<form action="#" method="post">
+				<form action="{% url 'buscar' %}">
 					<input
-						type="search"
-						name="search"
+						type="text"
+						name="buscar"
 						placeholder="O que está procurando..."
 					/>
 					<button type="submit">
