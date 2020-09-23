@@ -3,46 +3,25 @@
 {% load static %} 
 {% block content %}
 
-<!-- Preloader -->
+<!-- Preloader Area -->
 <div id="preloader">
 	<i class="circle-preloader"></i>
 	<img src="{% static 'img/core-img/pizza.png' %}" alt="" />
 </div>
+<!-- ##### Preloader Area End #####-->
 
-<!-- Search Wrapper -->
-<div class="search-wrapper">
-	<!-- Close Btn -->
-	<div class="close-btn">
-		<i class="fa fa-times" aria-hidden="true"></i>
-	</div>
+<!-- prettier-ignore  -->
+{% include 'partials/_busca.html' %}
 
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<form action="{% url 'buscar' %}">
-					<input
-						type="text"
-						name="buscar"
-						placeholder="O que está procurando..."
-					/>
-					<button type="submit">
-						<i class="fa fa-search" aria-hidden="true"></i>
-					</button>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
+{% include 'partials/_menu.html' %}
 
-{% include 'partials/menu.html' %}
-
-<!-- ##### Best Receipe Area Start ##### -->
+<!-- Best Receipe Area -->
 <section class="best-receipe-area">
 	<div class="container">
 		<div class="row">
 			<!-- prettier-ignore  -->
 			{% if receitas %} 
-				{% for receita in receitas %}
+			{% for receita in receitas %}
 			<!-- Single Best Receipe Area -->
 			<div class="col-12 col-sm-6 col-lg-4">
 				<div class="single-best-receipe-area mb-30">
@@ -58,6 +37,8 @@
 					</div>
 				</div>
 			</div>
+			<!-- ##### Single Best Receipe Area End ##### -->
+
 			<!-- prettier-ignore  -->
 			{% endfor %} 
 			{% else %} 
@@ -68,5 +49,6 @@
 <!-- ##### Best Receipe Area End ##### -->
 
 <!-- prettier-ignore  -->
-{% include 'partials/footer.html' %} 
+{% include 'partials/_footer.html' %} 
+
 {% endblock %}
