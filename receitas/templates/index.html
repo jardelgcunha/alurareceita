@@ -19,10 +19,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<form action="#" method="post">
+				<form action="{% url 'buscar' %}">
 					<input
-						type="search"
-						name="search"
+						type="text"
+						name="buscar"
 						placeholder="O que está procurando..."
 					/>
 					<button type="submit">
@@ -42,7 +42,7 @@
 		<div class="row">
 			<!-- prettier-ignore  -->
 			{% if receitas %} 
-			{% for receita in receitas %}
+				{% for receita in receitas %}
 			<!-- Single Best Receipe Area -->
 			<div class="col-12 col-sm-6 col-lg-4">
 				<div class="single-best-receipe-area mb-30">
