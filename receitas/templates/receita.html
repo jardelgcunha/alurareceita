@@ -57,12 +57,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-8">
-				<div class="receipe-headline my-5">
+				<div class="receipe-headline my-4">
 					<span>{{ receita.data_receita }}</span>
 					<h2>{{ receita.nome_receita }}</h2>
 					<div class="receipe-duration">
 						<h6>Preparo: {{ receita.tempo_preparo }} minutos</h6>
-						<h6>Rendimento: {{ receita.rendimento }} porções</h6>
+						<h6>Rendimento: {{ receita.rendimento }}</h6>
 						<h6>Categoria: {{ receita.categoria }}</h6>
 						<h6>Por: {{ receita.pessoa }}</h6>
 					</div>
@@ -81,7 +81,8 @@
 
 			<!-- Single Preparation Step -->
 			<div class="row">
-				<div class="col-12 col-lg-8">
+				<div class="col-12 col-lg-7 ml-3">
+					<h4 class="preparation-mode">Modo de preparo</h4>
 					<div class="single-preparation-step d-flex">
 						<p>{{ receita.modo_preparo }}</p>
 					</div>
@@ -94,6 +95,6 @@
 <!-- ##### Receipe Content Area End ##### -->
 
 <!-- prettier-ignore  -->
-{% include 'partials/_footer.html' %} 
+<!--  include 'partials/_footer.html'   -->
 
 {% endblock %}
