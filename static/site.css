@@ -180,7 +180,7 @@ img {
 .section-heading {
 	position: relative;
 	z-index: 1;
-	margin-bottom: 80px;
+	margin-bottom: 3rem;
 	text-align: center;
 }
 .section-heading h3 {
@@ -1619,11 +1619,11 @@ i.fa.fa-twitter {
 
 .contact-form-area .form-control {
 	height: 52px;
-	width: 100%;
+	width: 30%;
 	background-color: #f3f5f8;
 	font-size: 12px;
 	font-style: italic;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 	border: none;
 	border-left: 3px solid #f3f5f8;
 	border-radius: 0;
@@ -1631,6 +1631,11 @@ i.fa.fa-twitter {
 	-webkit-transition-duration: 500ms;
 	transition-duration: 500ms;
 }
+
+.contact-form-area #form-cadastro .form-control {
+	width: 100%;
+}
+
 .contact-form-area .form-control:focus {
 	border-left: 3px solid #40ba37;
 	box-shadow: none;
@@ -1639,6 +1644,10 @@ i.fa.fa-twitter {
 	height: 200px;
 	-webkit-transition-duration: 500ms;
 	transition-duration: 500ms;
+}
+
+.label-custom {
+	margin-right: 14.2rem;
 }
 
 /* :: 19.0 Elements Area CSS */
