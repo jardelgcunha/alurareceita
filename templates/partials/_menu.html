@@ -40,17 +40,17 @@
 				<!-- Menu Nav Area -->
 				<nav class="classy-navbar justify-content-between" id="deliciousNav">
 					<!-- Logo Area -->
-					<a class="nav-brand" href="{% url 'index' %}"
-						><img src="{% static 'img/core-img/logo.png' %}" alt=""
-					/></a>
+					<a class="nav-brand" href="{% url 'index' %}">
+						<img src="{% static 'img/core-img/logo.png' %}" alt=""/>
+					</a>
 					<!-- ##### Logo Area End ##### -->
 
 					<!-- Navbar Toggler Area -->
 					<div class="classy-navbar-toggler">
 						<!-- Menu Area -->
-						<span class="navbarToggler"
-							><span></span><span></span><span></span
-						></span>
+						<span class="navbarToggler">
+							<span></span><span></span><span></span>
+						</span>
 						<!-- ##### Menu Area End ##### -->
 					</div>
 					<!-- ##### Navbar Toggler Area End ##### -->
@@ -68,9 +68,15 @@
 						<!-- Nav Home Area -->
 						<div class="classynav">
 							<ul>
-								<li><a href="{% url 'index' %}">Home</a></li>
-								<li><a href="{% url 'cadastro' %}">Cadastro</a></li>
-								<li><a href="{% url 'login' %}">Login</a></li>
+								{% if user.is_authenticated %}
+									<li><a href="{% url 'index' %}">Home</a></li>
+									<li><a href="{% url 'dashboard' %}">Minhas receitas</a></li>
+									<li><a href="{% url 'logout' %}">Logout</a></li>
+								{% else %}
+									<li><a href="{% url 'index' %}">Home</a></li>
+									<li><a href="{% url 'cadastro' %}">Cadastro</a></li>
+									<li><a href="{% url 'login' %}">Login</a></li>
+								{% endif %}
 							</ul>
 
 							<!-- Search Form Area -->
