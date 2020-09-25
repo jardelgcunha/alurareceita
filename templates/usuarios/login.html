@@ -27,7 +27,8 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="contact-form-area">
-					<form action="" method="">
+					<form action="{% url 'login' %}" method="POST">
+						{% csrf_token %}
 						<div class="row">
 							<div class="col-12 col-lg-12 text-center">
 								<label for="email" class="label-custom"><b>Email</b></label>
@@ -38,6 +39,8 @@
 										class="form-control"
 										name="email"
 										placeholder="Entre com o email cadastrado"
+										required
+										autofocus
 									/>
 								</div>
 							</div>
@@ -50,6 +53,7 @@
 										class="form-control"
 										name="senha"
 										placeholder="Digite aqui sua senha"
+										required
 									/>
 								</div>
 							</div>
